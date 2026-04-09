@@ -1,5 +1,10 @@
 # 🚀 ¿Quién no te sigue?
 
+## 📸 Preview
+
+![App Screenshot](screenshot.png)
+
+
 Aplicación de escritorio desarrollada en Python que permite analizar los datos descargados de Instagram y detectar qué usuarios no te siguen de vuelta.
 
 Este proyecto fue creado como práctica real de desarrollo, trabajando con procesamiento de datos, archivos JSON y construcción de interfaces gráficas.
