@@ -4,10 +4,22 @@
 
 ![App Screenshot](screenshot.png)
 
+Aplicación desarrollada en Python que permite analizar los datos descargados de Instagram y detectar qué usuarios no te siguen de vuelta.
 
-Aplicación de escritorio desarrollada en Python que permite analizar los datos descargados de Instagram y detectar qué usuarios no te siguen de vuelta.
+Incluye:
 
-Este proyecto fue creado como práctica real de desarrollo, trabajando con procesamiento de datos, archivos JSON y construcción de interfaces gráficas.
+* 🖥️ Versión de escritorio (Tkinter)
+* 🌐 Versión web (Flask)
+
+Este proyecto fue creado como práctica real de desarrollo, trabajando con procesamiento de datos, archivos JSON, interfaces gráficas y aplicaciones web.
+
+---
+
+## 🌐 Web App
+
+Podés usar la versión web directamente desde el navegador:
+
+👉 *(agregar link cuando deployes)*
 
 ---
 
@@ -16,7 +28,9 @@ Este proyecto fue creado como práctica real de desarrollo, trabajando con proce
 * 📂 Cargar múltiples archivos de seguidores (followers)
 * 📂 Cargar archivo de seguidos (following)
 * 🔍 Comparar ambos datos automáticamente
-* 📋 Mostrar resultados en una interfaz con scroll
+* 📋 Mostrar resultados en una interfaz moderna con scroll
+* 📊 Contador visual de resultados
+* 📋 Copiar resultados al portapapeles
 * 💾 Exportar resultados a archivo `.txt`
 * ⚠️ Manejo de casos reales (cuentas eliminadas o desactivadas)
 
@@ -43,7 +57,9 @@ La aplicación:
 ## 🛠️ Tecnologías utilizadas
 
 * Python 3
+* Flask (web app)
 * Tkinter (interfaz gráfica)
+* HTML, CSS, JavaScript
 * JSON
 * Estructuras de datos (sets)
 
@@ -70,7 +86,11 @@ La aplicación:
    * `followers_*.json`
    * `following.json`
 
-5. Ejecutar la aplicación:
+---
+
+### 🖥️ Versión escritorio
+
+5. Ejecutar:
 
 ```bash
 python main.py
@@ -85,6 +105,15 @@ python main.py
 
 ---
 
+### 🌐 Versión web
+
+1. Abrir la aplicación en el navegador
+2. Subir archivos de followers y following
+3. Analizar
+4. Ver resultados / copiar / descargar
+
+---
+
 ## ⚠️ Limitaciones
 
 * Instagram no ofrece una API pública para validar usuarios
@@ -96,13 +125,28 @@ python main.py
 
 Raian Alen
 
+👉 Instagram: https://instagram.com/raianalen
+
 ---
 
 # 🇬🇧 English
 
 ## 🚀 Who Doesn't Follow Back
 
-A desktop application built with Python that analyzes Instagram data to find users who don’t follow you back.
+An application built with Python that analyzes Instagram data to find users who don’t follow you back.
+
+Includes:
+
+* 🖥️ Desktop version (Tkinter)
+* 🌐 Web version (Flask)
+
+---
+
+## 🌐 Web App
+
+Live version:
+
+👉 *(add link after deployment)*
 
 ---
 
@@ -111,7 +155,9 @@ A desktop application built with Python that analyzes Instagram data to find use
 * Load multiple followers files
 * Load following file
 * Compare both datasets
-* Display results in a scrollable UI
+* Display results in a modern scrollable UI
+* Visual counter of results
+* Copy results to clipboard
 * Export results to `.txt`
 * Handles real-world inconsistencies
 
@@ -144,26 +190,24 @@ The app processes Instagram JSON data and compares followers vs following using 
    * `followers_*.json`
    * `following.json`
 
-5. Run the application:
+---
+
+### 🖥️ Desktop version
+
+Run:
 
 ```bash
 python main.py
 ```
 
-6. Inside the app:
+---
 
-   * Load followers files
-   * Load following file
-   * Analyze
-   * Export results
+### 🌐 Web version
+
+Upload files → Analyze → View / Copy / Download results
+
+---
 
 ## ⚠️ Notes
 
 Some users may appear due to deleted or deactivated accounts.
-
-
-
-
-
-
-
