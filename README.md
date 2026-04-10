@@ -19,7 +19,7 @@ Este proyecto fue creado como práctica real de desarrollo, trabajando con proce
 
 Podés usar la versión web directamente desde el navegador:
 
-👉 *(agregar link cuando deployes)*
+👉 https://followchecker-raian.onrender.com/
 
 ---
 
@@ -146,7 +146,7 @@ Includes:
 
 Live version:
 
-👉 *(add link after deployment)*
+👉 https://followchecker-raian.onrender.com/
 
 ---
 
