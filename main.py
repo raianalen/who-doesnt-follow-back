@@ -1,5 +1,5 @@
-from followers import cargar_followers
-from following import cargar_following
+from core.followers import cargar_followers
+from core.following import cargar_following
 import tkinter as tk
 from tkinter import filedialog
 import datetime

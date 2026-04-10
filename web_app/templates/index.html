@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Who Doesn't Follow Back</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='icono.ico') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Who Doesn't Follow Back</h1>
+
+    {% if error %}
+    <p class="error">{{ error }}</p>
+    {% endif %}
+
+    <form action="/analizar" method="post" enctype="multipart/form-data">
+        <p>Followers:</p>
+        <label class="custom-file">
+            <span id="followers-text">Select Followers</span>
+            <input type="file" name="followers" multiple hidden>
+        </label>
+
+        <p>Following:</p>
+        <label class="custom-file">
+            <span id="following-text">Select Following</span>
+            <input type="file" name="following" hidden>
+        </label>
+        <button id="analyze-btn" class="btn-main" type="submit">Analyze</button>
+
+<div id="spinner" class="spinner hidden"></div>
+    </form>
+
+    {% if resultados %}
+        <div class="contador">
+            {{ resultados|length }} users don't follow you
+        </div>
+        <p class="warning">
+            ⚠ Some users may no longer exist or have deactivated their accounts.
+        </p>
+        <button class="btn-secondary" onclick="copiar()">📋 Copy</button>
+        <button class="btn-secondary" onclick="descargar()">⬇ Download</button>
+
+        <div class="resultados" id="lista">
+            {% for user in resultados %}
+                <div class="user">{{ user }}</div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+</div>
+
+<footer>
+    <a href="https://instagram.com/raian_alen" target="_blank" class="footer-link">
+        by @raianalen
+    </a>
+</footer>
+
+<script defer src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
