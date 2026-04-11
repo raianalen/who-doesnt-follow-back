@@ -87,3 +87,22 @@ if (form) {
         btn.innerText = "Analyzing...";
     });
 }
+
+function abrirModal() {
+    document.getElementById("modal").classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+}
+
+function cerrarModal(e) {
+    if (!e || e.target.id === "modal") {
+        document.getElementById("modal").classList.add("hidden");
+        document.body.style.overflow = "auto";
+    }
+}
+
+function setLang(lang) {
+    document.getElementById("content-en").classList.add("hidden");
+    document.getElementById("content-es").classList.add("hidden");
+
+    document.getElementById("content-" + lang).classList.remove("hidden");
+}

@@ -52,6 +52,60 @@
 
 </div>
 
+<p class="help-link" onclick="abrirModal()">
+    ❓ How to use / Cómo usar
+</p>
+
+<div id="modal" class="modal hidden">
+
+    <div class="modal-content">
+        <span class="close" onclick="cerrarModal()">✖</span>
+
+        <div class="lang-switch">
+            <button onclick="setLang('en')">EN</button>
+            <button onclick="setLang('es')">ES</button>
+        </div>
+
+        <!-- ENGLISH -->
+        <div id="content-en">
+            <h2>How to use</h2>
+
+            <ol>
+                <li>Download your Instagram data</li>
+                <li>Extract the .zip file</li>
+                <li>Upload followers and following files</li>
+                <li>Click Analyze</li>
+            </ol>
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/TU_VIDEO_ID"
+                        frameborder="0"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- ESPAÑOL -->
+        <div id="content-es" class="hidden">
+            <h2>Cómo usar</h2>
+
+            <ol>
+                <li>Descargá tus datos de Instagram</li>
+                <li>Extraé el archivo .zip</li>
+                <li>Subí los archivos de followers y following</li>
+                <li>Presioná Analyze</li>
+            </ol>
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/TU_VIDEO_ID"
+                        frameborder="0"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
 <footer>
     <a href="https://instagram.com/raian_alen" target="_blank" class="footer-link">
         by @raianalen
